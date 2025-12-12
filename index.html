@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hot Water Tank — Beat-Reactive Boiler Room</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="hud">
+        <div class="hud__left">
+          <button id="playBtn" class="btn btn--primary" type="button">Play</button>
+          <button id="pauseBtn" class="btn" type="button" disabled>Pause</button>
+          <label class="field">
+            <span class="field__label">Vol</span>
+            <input id="volume" type="range" min="0" max="1" step="0.01" value="0.85" />
+          </label>
+          <label class="field field--toggle">
+            <input id="debugToggle" type="checkbox" />
+            <span class="field__label">Debug</span>
+          </label>
+        </div>
+        <div class="hud__right">
+          <div id="status" class="status">Ready.</div>
+        </div>
+      </header>
+
+      <main class="stage" aria-label="Game canvas">
+        <canvas id="game" width="800" height="448"></canvas>
+        <div class="overlay">
+          <div id="prompt" class="prompt" aria-live="polite"></div>
+          <div id="debug" class="debug" hidden></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__hint">
+          WASD move • E interact • Click Play to start audio
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
