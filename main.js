@@ -1144,7 +1144,7 @@ function render() {
     debugEl.hidden = true;
   }
 }
-
+  
 function frame(now) {
   const dt = clamp((now - lastT) / 1000, 0, 0.05);
   lastT = now;
