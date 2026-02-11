@@ -1145,7 +1145,7 @@ function render() {
   }
 } 
 
-// modification s
+// modifica tion s
   
 function frame(now) { 
   const dt = clamp((now - lastT) / 1000, 0, 0.05);
