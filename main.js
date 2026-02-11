@@ -1140,7 +1140,7 @@ function render() {
       `steam ${steamEnabled ? "on" : "off"}\n` +
       `console ${consoleArmed ? "armed" : "off"}\n` +
       `gate ${gateOpen ? "open" : "closed"}`;
-  } else {
+  } else {  
     debugEl.hidden = true;
   }
 }
